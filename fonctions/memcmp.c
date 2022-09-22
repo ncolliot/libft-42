@@ -1,13 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
-void *memchr(const void *dst, const void *str, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    size_t  i;
-    unchanged char dst  
+	int	i;
+
+	i = 0;
+	while(n-- > 0)
+	{
+		if(*(unsigned char*)(s1 + i) == *(unsigned char*)(s2 + i))
+			i++;
+		else
+			return(*(unsigned char*)(s1 + i) - *((unsigned char*)s2 + i));
+	}
+	return(0);
 }
 
 int main()
 {
-
+	
+	return(0);
 }
