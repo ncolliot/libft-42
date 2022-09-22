@@ -6,8 +6,6 @@ void    ft_bzero(void *s, size_t n)
     size_t  i;
 
     i = 0;
-    if(i < n)
-        return;
     while(i < n)
     {
         *(char*)(s + i) = 0;
@@ -20,5 +18,6 @@ int main()
     char str[50] = "This is for the test!";
     
     bzero(str, 4);
+    printf("%s", str);
     return (0);
 }
