@@ -16,8 +16,8 @@ void    ft_bzero(void *s, size_t n)
 int main()
 {
     char str[50] = "This is for the test!";
-    
-    bzero(str, 4);
+    printf("%s\n", str);
+    bzero(str, strlen(str));
     printf("%s", str);
     return (0);
 }
