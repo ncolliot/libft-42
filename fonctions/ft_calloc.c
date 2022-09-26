@@ -5,7 +5,6 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	char	*memo;
 	size_t	i;
-
 	i = 0;
 	memo = malloc(count * size);
 	if (memo == NULL)
